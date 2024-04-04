@@ -114,3 +114,11 @@ footer {
   border-radius: 10px;
   background-color: #f1f1f1;
 }
+
+.title {
+  font-weight: 900;
+  font-size: 36px;
+}
+.italic{
+  font-style: italic;
+}

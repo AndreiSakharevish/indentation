@@ -1,7 +1,9 @@
 @import "normalize.css";
 @import "global.css";
 @import "header.css";
-
+@import "previous.css";
+@import "last.css";
+@import "zeroing.css";
 @import "footer.css";
 
 @font-face {

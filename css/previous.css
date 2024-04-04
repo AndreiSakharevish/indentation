@@ -1,0 +1,33 @@
+.previous__title {
+  margin-bottom: 30px;
+}
+
+.previous__figure {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.previous__figure:not(:last-child) {
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.previous__img {
+  max-width: 560px;
+  object-fit: cover;
+}
+
+.importantly,
+.indent {
+  max-width: 482px;
+  display: inline-block;
+}
+
+.importantly__text:not(:last-child),
+.indent__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.strong {
+  font-weight: 700;
+}

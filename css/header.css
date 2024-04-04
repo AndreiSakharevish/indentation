@@ -1,0 +1,39 @@
+.container {
+  margin-bottom: 50px;
+}
+
+.header__title {
+  font-weight: 900;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.header__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.nav {
+  padding: 25px 0px 25px 45px;
+}
+
+.nav__title {
+  font-weight: 700;
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+.nav__list {
+  padding-left: 20px;
+}
+
+.nav__item {
+  color: #02535f;
+}
+
+.nav__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.nav__link {
+  border-bottom: 1px solid #000;
+}

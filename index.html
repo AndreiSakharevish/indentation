@@ -65,39 +65,48 @@
       <section id="last">
         <div class="container">
           <h3 class="last__title title">Отступ задается последнему возможному элементу в DOM-дереве</h3>
+          <p class="last__text">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
+
           <figure class="figure">
-            <figcaption class="figcaption">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</figcaption>
-            <img class="figure__img" src="img/code_dom.jpg" alt="картинка с изображением кода" />
+            <img class="figure__img img" src="img/code_dom.jpg" alt="картинка с изображением кода" />
           </figure>
 
           <figure class="figure">
-            <img class="figure__img" src="img/recipes.jpg" alt="изображение с описанием полезных рецептов" />
+            <img class="figure__img figure__img_w_600" src="img/recipes.jpg" alt="изображение с описанием полезных рецептов" />
           </figure>
 
-          <figure class="figure">
-            <figcaption class="figcaption">Отступ делают за счёт соседних элементов, а не дочерних:</figcaption>
-            <img class="figure__img" src="img/recipes_code.jpg" alt="изображение с описанием полезных рецептов и кодом" />
-            <p class="figure__text"><span class="bold">ВАЖНО:</span> здесь <span class="italic">.list-item</span> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</p>
+          <p class="last__text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
+
+          <figure class="figure figure_br">
+            <img class="figure__img img" src="img/recipes_code.jpg" alt="изображение с описанием полезных рецептов и кодом" />
+            <figcaption class="figcaption">
+              <span class="bold">ВАЖНО:</span> здесь <span class="italic">.list-item</span> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.
+            </figcaption>
           </figure>
+
           <p class="last__text">
             Казалось бы, можно задать отступ параграфу <span class="italic">&lt;p&gt;</span>, либо обёртке <span class="italic">&lt;article&gt;</span> для достижения той же цели. Внешне останется все
             точно также, но так делать не рекомендуется.
           </p>
+          <p class="last__text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
 
           <figure class="figure">
-            <figcaption class="figcaption">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</figcaption>
-            <img class="figure__img" src="img/code_section.jpg" alt="картинка с изображением кода" />
+            <img class="figure__img figure__img_w_964" src="img/code_section.jpg" alt="картинка с изображением кода" />
           </figure>
 
+          <p class="last__text">
+            В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <span class="italic">section.</span> Именно для него задается <span class="italic">padding-top,</span> а
+            не <span class="italic">div</span> с классом <span class="italic">container.</span> Свойства <span class="italic">margin,</span> которые стоят по умолчанию необходимо обнулить.
+          </p>
+          
           <figure class="figure">
-            <figcaption class="figcaption">
-              В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <span class="italic">section.</span> Именно для него задается
-              <span class="italic">padding-top,</span> а не <span class="italic">div</span> с классом <span class="italic">container.</span> Свойства <span class="italic">margin,</span> которые стоят
-              по умолчанию необходимо обнулить.
-            </figcaption>
-            <img class="figure__img" src="img/cat_code.jpg" alt="картинка с изображением кота и кода" />
+            <img class="figure__img figure__img_w_1022" src="img/cat_code.jpg" alt="картинка с изображением кота и кода" />
           </figure>
-          <p class="last__text">Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.</p>
+          
+          <p class="last__text">
+            Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или
+            выводе вёрстки с нестандартной структурой отступов.
+          </p>
         </div>
       </section>
 

@@ -1,7 +1,7 @@
-.footer__list {
+.outcomes__list {
   margin-bottom: 30px;
 }
 
-.footer__item::before {
+.outcomes__item::before {
   content: "\2014\00A0";
 }

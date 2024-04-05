@@ -128,3 +128,7 @@ footer {
 .img {
   max-width: 1080px;
 }
+
+.figure__img_w_600 {
+  max-width: 600px;
+}

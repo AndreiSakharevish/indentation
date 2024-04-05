@@ -98,11 +98,11 @@
             В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <span class="italic">section.</span> Именно для него задается <span class="italic">padding-top,</span> а
             не <span class="italic">div</span> с классом <span class="italic">container.</span> Свойства <span class="italic">margin,</span> которые стоят по умолчанию необходимо обнулить.
           </p>
-          
+
           <figure class="figure">
             <img class="figure__img figure__img_w_1022" src="img/cat_code.jpg" alt="картинка с изображением кота и кода" />
           </figure>
-          
+
           <p class="last__text">
             Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или
             выводе вёрстки с нестандартной структурой отступов.
@@ -111,7 +111,45 @@
       </section>
 
       <section id="zeroing">
-        <div class="container"></div>
+        <div class="container">
+          <h3 class="zeroing__title title">Для последнего элемента группы отступ всегда обнуляется</h3>
+          <p class="zeroing__text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
+          <p class="zeroing__text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
+          <figure class="figure">
+            <img class="figure__img figure__img_w_600" src="img/recipes_green.jpg" alt="изображение с описанием полезных рецептов" />
+          </figure>
+          <p class="zeroing__text">
+            В соответствии со вторым принципом: последний <span class="italic">margin</span> обнуляется, а нижний отступ задаётся через <span class="italic">padding</span> для
+            <span class="italic">section.</span> Я чаще всего задаю <span class="italic">padding</span> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям
+            <span class="italic">padding-top:50px</span> и <span class="italic">padding-bottom:50px.</span>
+          </p>
+          <figure class="figure">
+            <img class="figure__img figure__img_w_600" src="img/recipes_green_two.jpg" alt="изображение с описанием полезных рецептов" />
+          </figure>
+
+          <figure class="figure">
+            <img class="figure__img img" src="img/duble__code.jpg" alt="изображение с описанием кода" />
+          </figure>
+          <p class="zeroing__text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
+
+          <figure class="figure">
+            <img class="figure__img img" src="img/menu.jpg" alt="изображение логотипа MethEd и пункты меню" />
+          </figure>
+
+          <figure class="figure">
+            <img class="figure__img figure__img_w_806" src="img/menu_code.jpg" alt="изображение с кодом" />
+          </figure>
+          <p class="zeroing__text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
+
+          <figure class="figure">
+            <img class="figure__img figure__img_w_317" src="img/menu_code_mini.jpg" alt="изображение с кодом" />
+          </figure>
+          <p class="zeroing__text">Советую использовать псевдоклассы :last-child чаще других, например так:</p>
+
+          <figure class="figure">
+            <img class="figure__img figure__img_w_500" src="img/menu_code_end.jpg" alt="изображение с кодом" />
+          </figure>
+        </div>
       </section>
     </main>
 

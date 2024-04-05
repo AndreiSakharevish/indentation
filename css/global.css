@@ -121,8 +121,12 @@ footer {
   margin-bottom: 30px;
 }
 
-.italic {
-  font-style: italic;
+.figure:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.figure__img {
+  margin: 0 auto;
 }
 
 .img {
@@ -131,4 +135,16 @@ footer {
 
 .figure__img_w_600 {
   max-width: 600px;
+}
+
+.text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.strong {
+  font-weight: 700;
 }

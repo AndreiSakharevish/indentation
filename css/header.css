@@ -8,10 +8,6 @@
   margin-bottom: 30px;
 }
 
-.header__text:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .nav {
   padding: 25px 0px 25px 45px;
 }

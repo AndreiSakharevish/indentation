@@ -18,12 +18,3 @@
   max-width: 482px;
   display: inline-block;
 }
-
-.importantly__text:not(:last-child),
-.indent__text:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-.strong {
-  font-weight: 700;
-}

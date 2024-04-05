@@ -1,7 +1,3 @@
-.figure:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .figure_br {
   border: 1px solid #000;
 }
@@ -11,22 +7,10 @@
   padding: 15px 30px;
 }
 
-.figure__img {
-  margin: 0 auto;
-}
-
 .figure__img_w_964 {
   max-width: 964px;
 }
 
 .figure__img_w_1022 {
   max-width: 1022px;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.last__text:not(:last-child) {
-  margin-bottom: 30px;
 }

@@ -100,11 +100,13 @@ iframe {
 
 
 article {
-  padding: 25px 0;
+  padding: 50px 0;
 }
-section{
+
+section {
   padding-top: 25px;
 }
+
 section:not(:last-child) {
   padding-bottom: 25px;
 }
@@ -140,7 +142,9 @@ section:not(:last-child) {
 .figure__img {
   margin: 0 auto;
 }
-
+.figcaption{
+  padding-bottom: 30px;
+}
 .img {
   max-width: 1080px;
 }

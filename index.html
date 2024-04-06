@@ -37,41 +37,39 @@
       <section class="previous" id="previous">
         <div class="container">
           <h3 class="title">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h3>
-        <div class="previous__block">
-          <figure class="previous__figure">
-            <img class="previous__img" src="img/cats.jpg" alt="четыре картинки с котами" />
-          </figure>
-          <div class="importantly">
-            <p class="text"><span class="strong">ВАЖНО:</span> <span class="italic">margin</span> всегда задают от предыдущего элемента к следующему.</p>
-            <p class="text">
-              Свойство <span class="italic">margin</span> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <span class="italic">margin-right</span> и
-              <span class="italic">margin-bottom.</span>
-            </p>
-            <p class="text">(!) Свойства <span class="italic">margin-left</span> и <span class="italic">margin-top</span> используются крайне редко.</p>
-            <p class="text">
-              Для <span class="italic">padding</span> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.
-            </p>
+          <div class="previous__block">
+            <figure class="previous__figure">
+              <img class="previous__img" src="img/cats.jpg" alt="четыре картинки с котами" />
+            </figure>
+            <div class="importantly">
+              <p class="text"><span class="strong">ВАЖНО:</span> <span class="italic">margin</span> всегда задают от предыдущего элемента к следующему.</p>
+              <p class="text">
+                Свойство <span class="italic">margin</span> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <span class="italic">margin-right</span> и
+                <span class="italic">margin-bottom.</span>
+              </p>
+              <p class="text">(!) Свойства <span class="italic">margin-left</span> и <span class="italic">margin-top</span> используются крайне редко.</p>
+              <p class="text">Для <span class="italic">padding</span> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.</p>
+            </div>
+          </div>
+          <div class="previous__block">
+            <div class="indent">
+              <p class="text">Отступ внутри блока сверху или слева реализуется через <span class="italic">padding-top</span> и <span class="italic">padding-left</span> родителя.</p>
+              <p class="text">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
+              <p class="text">Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
+            </div>
+            <figure class="previous__figure">
+              <img class="previous__img" src="img/one_cat.jpg" alt="спящий кот" />
+            </figure>
           </div>
         </div>
-         <div class="previous__block">
-          <div class="indent">
-            <p class="text">Отступ внутри блока сверху или слева реализуется через <span class="italic">padding-top</span> и <span class="italic">padding-left</span> родителя.</p>
-            <p class="text">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
-            <p class="text">Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
-          </div>
-          <figure class="previous__figure">
-            <img class="previous__img" src="img/one_cat.jpg" alt="спящий кот" />
-          </figure>
-        </div>
-         </div>
       </section>
 
       <section class="last" id="last">
         <div class="container">
           <h3 class="title">Отступ задается последнему возможному элементу в DOM-дереве</h3>
-          <p class="text">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
-
+<!-- ---------- -->
           <figure class="figure">
+            <figcaption class="figcaption">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</figcaption>
             <img class="figure__img img" src="img/code_dom.jpg" alt="картинка с изображением кода" />
           </figure>
 
@@ -80,10 +78,10 @@
           </figure>
 
           <p class="text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
-
+<!--================ -->
           <figure class="figure figure_br">
             <img class="figure__img img" src="img/recipes_code.jpg" alt="изображение с описанием полезных рецептов и кодом" />
-            <figcaption class="figcaption">
+            <figcaption class="figure__figcaption">
               <span class="strong">ВАЖНО:</span> здесь <span class="italic">.list-item</span> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.
             </figcaption>
           </figure>
@@ -92,18 +90,18 @@
             Казалось бы, можно задать отступ параграфу <span class="italic">&lt;p&gt;</span>, либо обёртке <span class="italic">&lt;article&gt;</span> для достижения той же цели. Внешне останется все
             точно также, но так делать не рекомендуется.
           </p>
-          <p class="text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
-
+<!-- ---------- -->
           <figure class="figure">
+            <figcaption class="figcaption">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</figcaption>
             <img class="figure__img figure__img_w_964" src="img/code_section.jpg" alt="картинка с изображением кода" />
           </figure>
-
-          <p class="text">
-            В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <span class="italic">section.</span> Именно для него задается <span class="italic">padding-top,</span> а
-            не <span class="italic">div</span> с классом <span class="italic">container.</span> Свойства <span class="italic">margin,</span> которые стоят по умолчанию необходимо обнулить.
-          </p>
-
+<!-- -------------- -->
           <figure class="figure">
+            <figcaption class="figcaption">
+              В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <span class="italic">section.</span> Именно для него задается
+              <span class="italic">padding-top,</span> а не <span class="italic">div</span> с классом <span class="italic">container.</span> Свойства <span class="italic">margin,</span> которые стоят
+              по умолчанию необходимо обнулить.
+            </figcaption>
             <img class="figure__img figure__img_w_1022" src="img/cat_code.jpg" alt="картинка с изображением кота и кода" />
           </figure>
 
@@ -118,40 +116,42 @@
         <div class="container">
           <h3 class="title">Для последнего элемента группы отступ всегда обнуляется</h3>
           <p class="text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
-          <p class="text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
+<!-- ---------------- -->
           <figure class="figure">
+            <figcaption class="figcaption">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</figcaption>
             <img class="figure__img figure__img_w_600" src="img/recipes_green.jpg" alt="изображение с описанием полезных рецептов" />
           </figure>
-          <p class="text">
-            В соответствии со вторым принципом: последний <span class="italic">margin</span> обнуляется, а нижний отступ задаётся через <span class="italic">padding</span> для
-            <span class="italic">section.</span> Я чаще всего задаю <span class="italic">padding</span> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям
-            <span class="italic">padding-top:50px</span> и <span class="italic">padding-bottom:50px.</span>
-          </p>
+<!-- ------------= -->
           <figure class="figure">
+            <figcaption class="figcaption">
+              В соответствии со вторым принципом: последний <span class="italic">margin</span> обнуляется, а нижний отступ задаётся через <span class="italic">padding</span> для
+              <span class="italic">section.</span> Я чаще всего задаю <span class="italic">padding</span> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям
+              <span class="italic">padding-top:50px</span> и <span class="italic">padding-bottom:50px.</span>
+            </figcaption>
             <img class="figure__img figure__img_w_600" src="img/recipes_green_two.jpg" alt="изображение с описанием полезных рецептов" />
           </figure>
 
           <figure class="figure">
             <img class="figure__img img" src="img/duble__code.jpg" alt="изображение с описанием кода" />
           </figure>
-          <p class="text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
-
+<!-- =----------= -->
           <figure class="figure">
+            <figcaption class="figcaption">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</figcaption>
             <img class="figure__img img" src="img/menu.jpg" alt="изображение логотипа MethEd и пункты меню" />
           </figure>
 
           <figure class="figure">
             <img class="figure__img figure__img_w_806" src="img/menu_code.jpg" alt="изображение с кодом" />
           </figure>
-          <p class="text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
-
+<!-- -------------------= -->
           <figure class="figure">
+            <figcaption class="figcaption">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</figcaption>
             <img class="figure__img figure__img_w_317" src="img/menu_code_mini.jpg" alt="изображение с кодом" />
           </figure>
-          <p class="text">Советую использовать псевдоклассы :last-child чаще других, например так:</p>
-
+<!-- -----------------= -->
           <figure class="figure">
-            <img class="figure__img figure__img_w_500" src="img/menu_code_end.jpg" alt="изображение с кодом" />
+          <figcaption class="figcaption">Советую использовать псевдоклассы :last-child чаще других, например так:</figcaption>
+           <img class="figure__img figure__img_w_500" src="img/menu_code_end.jpg" alt="изображение с кодом" />
           </figure>
         </div>
       </section>

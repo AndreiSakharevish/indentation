@@ -5,3 +5,6 @@
 .outcomes__item::before {
   content: "\2014\00A0";
 }
+.outcomes__item:not(:last-child){
+  margin-bottom: 10px;
+}

@@ -67,7 +67,7 @@
       <section class="last" id="last">
         <div class="container">
           <h3 class="title">Отступ задается последнему возможному элементу в DOM-дереве</h3>
-<!-- ---------- -->
+
           <figure class="figure">
             <figcaption class="figcaption">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</figcaption>
             <img class="figure__img img" src="img/code_dom.jpg" alt="картинка с изображением кода" />
@@ -78,7 +78,7 @@
           </figure>
 
           <p class="text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
-<!--================ -->
+          <!--================ -->
           <figure class="figure figure_br">
             <img class="figure__img img" src="img/recipes_code.jpg" alt="изображение с описанием полезных рецептов и кодом" />
             <figcaption class="figure__figcaption">
@@ -90,12 +90,12 @@
             Казалось бы, можно задать отступ параграфу <span class="italic">&lt;p&gt;</span>, либо обёртке <span class="italic">&lt;article&gt;</span> для достижения той же цели. Внешне останется все
             точно также, но так делать не рекомендуется.
           </p>
-<!-- ---------- -->
+
           <figure class="figure">
             <figcaption class="figcaption">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</figcaption>
             <img class="figure__img figure__img_w_964" src="img/code_section.jpg" alt="картинка с изображением кода" />
           </figure>
-<!-- -------------- -->
+
           <figure class="figure">
             <figcaption class="figcaption">
               В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <span class="italic">section.</span> Именно для него задается
@@ -116,12 +116,12 @@
         <div class="container">
           <h3 class="title">Для последнего элемента группы отступ всегда обнуляется</h3>
           <p class="text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
-<!-- ---------------- -->
+
           <figure class="figure">
             <figcaption class="figcaption">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</figcaption>
             <img class="figure__img figure__img_w_600" src="img/recipes_green.jpg" alt="изображение с описанием полезных рецептов" />
           </figure>
-<!-- ------------= -->
+
           <figure class="figure">
             <figcaption class="figcaption">
               В соответствии со вторым принципом: последний <span class="italic">margin</span> обнуляется, а нижний отступ задаётся через <span class="italic">padding</span> для
@@ -134,7 +134,7 @@
           <figure class="figure">
             <img class="figure__img img" src="img/duble__code.jpg" alt="изображение с описанием кода" />
           </figure>
-<!-- =----------= -->
+
           <figure class="figure">
             <figcaption class="figcaption">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</figcaption>
             <img class="figure__img img" src="img/menu.jpg" alt="изображение логотипа MethEd и пункты меню" />
@@ -143,15 +143,15 @@
           <figure class="figure">
             <img class="figure__img figure__img_w_806" src="img/menu_code.jpg" alt="изображение с кодом" />
           </figure>
-<!-- -------------------= -->
+
           <figure class="figure">
             <figcaption class="figcaption">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</figcaption>
             <img class="figure__img figure__img_w_317" src="img/menu_code_mini.jpg" alt="изображение с кодом" />
           </figure>
-<!-- -----------------= -->
+
           <figure class="figure">
-          <figcaption class="figcaption">Советую использовать псевдоклассы :last-child чаще других, например так:</figcaption>
-           <img class="figure__img figure__img_w_500" src="img/menu_code_end.jpg" alt="изображение с кодом" />
+            <figcaption class="figcaption">Советую использовать псевдоклассы :last-child чаще других, например так:</figcaption>
+            <img class="figure__img figure__img_w_500" src="img/menu_code_end.jpg" alt="изображение с кодом" />
           </figure>
         </div>
       </section>

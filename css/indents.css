@@ -2,6 +2,10 @@
   margin-bottom: 50px;
 }
 
+.wrapper__container {
+  margin-bottom: 25px;
+}
+
 .indents__title {
   font-weight: 900;
   font-size: 60px;

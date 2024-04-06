@@ -97,10 +97,16 @@ iframe {
 в итоге 1240px
 Чтобы контент не прижимался к краям экрана
 */
-header,
-section,
-footer {
+
+
+article {
   padding: 25px 0;
+}
+section{
+  padding-top: 25px;
+}
+section:not(:last-child) {
+  padding-bottom: 25px;
 }
 
 .container {

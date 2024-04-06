@@ -3,9 +3,13 @@
   vertical-align: top;
 }
 
-.previous__figure:not(:last-child) {
-  margin-bottom: 30px;
+.previous__figure:not(:last-child),
+.indent:not(:last-child) {
   margin-right: 30px;
+}
+
+.previous__block:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .previous__img {
